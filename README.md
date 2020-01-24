@@ -1,4 +1,4 @@
-# D Git Workflow
+# take-git-easy
 
 Designed for teams that have no idea when their features will go live. This workflow assumes you've 3 stacks.
 
