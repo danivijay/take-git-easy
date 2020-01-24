@@ -1,10 +1,11 @@
 # take-git-easy
 
-Designed for teams that have no idea when their features will go live. This workflow assumes you've 3 stacks.
+Designed for teams that have no idea when their features will go live. This workflow requires 4 stacks to be fully functional
 
+1. `local` stack for developer testing
 1. Disposable `qa` stack for testing
 2. `release` stack for integration testing
-3. `master` for production
+3. `master` stack for production
 
 ## Stacks
 
@@ -21,7 +22,7 @@ Designed for teams that have no idea when their features will go live. This work
 - **NO REVERSE MERGES EXCEPT FROM MASTER**, in case of integration errors (only if the issue caused because of more than one feature of that particular release), create a `bugfix` from **release**
 
 ### qa
-- for testing, **ONLY** for features that cannot be tested in **Local** (or **Docker**)
+- for testing, **ONLY** for features that cannot be tested in **Local**
 - **always take from master**
 - prefixed with 	`qa/`
 - **DO NOT** merge this branch directly to **release** (or **master**, obviously)
