@@ -21,7 +21,7 @@ Designed for teams that have no idea when their features will go live. This work
 - **NO REVERSE MERGES EXCEPT FROM MASTER**, in case of integration errors (only if the issue caused because of more than one feature of that particular release), create a `bugfix` from **release**
 
 ### qa
-- for feature testing
+- for testing, **ONLY** for features that cannot be tested in **Local** (or **Docker**)
 - **always take from master**
 - prefixed with 	`qa/`
 - **DO NOT** merge this branch directly to **release** (or **master**, obviously)
