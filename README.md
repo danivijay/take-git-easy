@@ -13,9 +13,9 @@ Designed for teams that have no idea when their features will go live. This work
 
 - **always take from master**
 - prefixed with 
-    - `feature/` - for full-fledged features - if some bug found while **qa** testing, please fix it here and re-merge 
-    - `bugfix/` - for bug fixes, **only if corresponding feature is merged to master** - **IF AND ONLY IF** merging multiple features created a new bug, create a new **bugfix** from **release**, otherwise make changes in **feature** and re-merge - `hotfix/`
-    - you messed up your production build, this should merge immediately to master to make things work again, **ALWAYS reverse-merge to release once merged to master**. I repeat, **ALWAYS**.
+    - `feature/` : for full-fledged features - if some bug found while **qa** testing, please fix it here and re-merge 
+    - `bugfix/` : for bug fixes, **only if corresponding feature is merged to master** - **IF AND ONLY IF** merging multiple features created a new bug, create a new **bugfix** from **release**, otherwise make changes in **feature** and re-merge 
+    - `hotfix/` : you messed up your production build, this should merge immediately to master to make things work again, **ALWAYS reverse-merge to release once merged to master**. I repeat, **ALWAYS**.
 - merge to **qa** for testing
 - merge to **release** for integration testing
 - **NO REVERSE MERGES EXCEPT FROM MASTER**, in case of integration errors (only if the issue caused because of more than one feature of that particular release), create a `bugfix` from **release**
